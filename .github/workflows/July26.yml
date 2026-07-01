@@ -27,7 +27,10 @@ jobs:
 
     - name: Verify Node.js Version
       run: node -v
-
+      
+    - name: Clear npm cache
+      run: npm cache clean --force
+      
     - name: Download cortexcli
       run: |
         set -x
